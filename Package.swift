@@ -27,9 +27,6 @@ let package = Package(
 			dependencies: [
 				"SlatherSwift",
 				.product(name: "SwiftlaneUnitTestTools", package: "SwiftlaneCore"),
-			],
-			resources: [
-				.copy("Stubs"),
 			]
 		),
 	]
