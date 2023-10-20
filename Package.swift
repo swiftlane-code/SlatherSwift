@@ -6,14 +6,14 @@ import PackageDescription
 let package = Package(
 	name: "SlatherSwift",
 	platforms: [.macOS(.v12)],
-    products: [
-        .executable(name: "SlatherSwift", targets: ["SlatherSwift"]),
-    ],
-    dependencies: [
-        .package(url: "https://github.com/apple/swift-argument-parser", "1.1.4"..<"1.2.0"), // 1.2.0 Bugs (default value for @Flag)
-        .package(url: "https://github.com/swiftlane-code/SwiftlaneCore.git", from: "0.9.0"),
-    ],
-    targets: [
+	products: [
+		.executable(name: "SlatherSwift", targets: ["SlatherSwift"]),
+	],
+	dependencies: [
+		.package(url: "https://github.com/apple/swift-argument-parser", "1.1.4"..<"1.2.0"), // 1.2.0 Bugs (default value for @Flag)
+		.package(url: "https://github.com/swiftlane-code/SwiftlaneCore.git", from: "0.9.0"),
+	],
+	targets: [
 		.executableTarget(
 			name: "SlatherSwift",
 			dependencies: [
